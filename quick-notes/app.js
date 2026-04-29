@@ -2,7 +2,7 @@ let notes = []
 let editingNoteId = null
 
 function loadNotes() {
-  const savedNotes = localStorage.getItem('quickNotes')
+  const savedNotes = localStorage.getItem('quickNotes');
   return savedNotes ? JSON.parse(savedNotes) : []
 }
 
